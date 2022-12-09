@@ -5,12 +5,9 @@ eureka:
         service-url:
             defaultZone: http://localhost:8081/eureka
 server:
-    port: 0
     servlet:
         context-path: /planningpoker/api/v1/arquivos
 spring:
-    application:
-        name: ArquivoMS
     datasource:
         driverClassName: org.postgresql.Driver
         password: ${PGPASSWORD}
