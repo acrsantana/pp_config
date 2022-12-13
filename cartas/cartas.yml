@@ -18,3 +18,5 @@ spring:
         hibernate:
             ddl-auto: create-drop
         open-in-view: true
+    application:
+        name: cartas
