@@ -1,0 +1,20 @@
+eureka:
+    client:
+        fetch-registry: true
+        register-with-eureka: true
+        service-url:
+            defaultZone: http://localhost:8081/eureka
+server:
+    port: 0
+    servlet:
+        context-path: /planningpoker/api/v1/organizacoes
+spring:
+    datasource:
+        driverClassName: org.postgresql.Driver
+        password: ${PGPASSWORD}
+        url: jdbc:postgresql://localhost:5432/organizacoes
+        username: ${PGUSER}
+    jpa:
+        hibernate:
+            ddl-auto: create-drop
+        open-in-view: true
