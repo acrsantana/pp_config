@@ -16,5 +16,5 @@ spring:
         username: ${PGUSER}
     jpa:
         hibernate:
-            ddl-auto: create-drop
+            ddl-auto: none
         open-in-view: true
